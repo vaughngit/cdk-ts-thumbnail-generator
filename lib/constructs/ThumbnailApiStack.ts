@@ -74,7 +74,7 @@ export class ThumbnailApiStack extends Construct {
 
 
     const sharpLambdaLayer = LayerVersion.fromLayerVersionAttributes(this, "sharp lambda layer", {
-      layerVersionArn: "arn:aws:lambda:us-east-2:796072252262:layer:sharp:1"
+      layerVersionArn: `arn:aws:lambda:${region}:${account}:layer:sharp:1`
     })
 
       const createThumbnailLambda = new NodejsFunction(this, 'create thumbnail lambda', {

@@ -5,15 +5,23 @@
 -[Something went wrong installing the \"sharp\" on aws Lambda](https://stackoverflow.com/questions/70487565/something-went-wrong-installing-the-sharp-on-aws-lambda)
 
 
-`
-I would recommend using a layer, much easier to configure and deploy. On the AWS console, you can deploy this layer - https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:987481058235:applications/nodejs-sharp-lambda-layer
 
-If that URL doesn't work, navigate to functions on the console -> Create Function -> Browse Serveless App Repo -> Search for "Sharp", select "nodejs-sharp-lambda-layer".
+### For nodejs deploy sharp as a lambda layer 
+ On the AWS console, you can deploy this layer - 
 
-Deploy the layer -> On your lambda function, select the layer.
-`
+ If that URL doesn't work, navigate to functions on the console -> Create Function -> Browse Serverless App Repo -> Search for "Sharp", select "nodejs-sharp-lambda-layer".
 
-https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/create/app?applicationId=arn:aws:serverlessrepo:us-east-2:987481058235:applications/nodejs-sharp-lambda-layer
+us-west-2
+ https://us-west-2.console.aws.amazon.com/lambda/home?region=us-west-2#/create/application 
+
+us-east-1
+https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/create/application
+
+us-east-2
+https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/create/application 
+
+
+
 
 - [API Gateway REST API to S3 ](https://serverlessland.com/patterns/apigw-s3)
 -[REST API as an Amazon S3 proxy in API Gateway](https://github.com/aws-samples/serverless-patterns/blob/main/apigw-s3-cdk/README.md)
